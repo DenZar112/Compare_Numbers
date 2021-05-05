@@ -7,16 +7,20 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginBottom="112dp"
+        android:shadowColor="#FFFFFF"
         android:text="PUSH Me"
+        android:textColor="#F44336"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF" />
 
 
 
@@ -31,8 +35,15 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="My Application"
             android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What's your name?"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button"
@@ -52,6 +63,12 @@
             android:text="Name"
             android:textSize="42sp" />
 
+
+
+
+
+
+
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
@@ -67,7 +84,7 @@
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <RadioButton
                 android:id="@+id/radioButton"
