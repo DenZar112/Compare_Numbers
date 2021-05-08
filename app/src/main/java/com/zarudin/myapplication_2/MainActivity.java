@@ -27,16 +27,22 @@ public class MainActivity extends AppCompatActivity {
         final TextView textView = findViewById(R.id.textView);
 
         button3.setOnClickListener(v -> {
-            arg1 = Integer.valueOf(editText1.getText().toString());
-            arg2 = Integer.valueOf(editText2.getText().toString());
-            if (arg1.equals(arg2)) {
-                textView.setText("Равно!");
-            } else {
-                textView.setText("Не равно!");
+            try {
+                arg1 = Integer.valueOf(editText1.getText().toString());
+                arg2 = Integer.valueOf(editText2.getText().toString());
+                if (arg1.equals(arg2)) {
+                    textView.setText("Равно!");
+                } else {
+                    textView.setText("Не равно!");
+                }
+            } catch (NumberFormatException e) {
+                textView.setText("Введите число");
             }
 
         });
     }
+
+
 
 
 }
